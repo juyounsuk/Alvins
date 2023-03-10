@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{padding:0; margin:0; box-sizing: border-box;}
+html{font-size: 18px;}
+body{font-family: 'Noto Sans KR', sans-serif;}
+ul, ol, li{list-style-type: none;}
+a{text-decoration: none; color:inherit;}
+#wrap{width: 100%; }
+.inner{width:1080px;margin:0 auto;}
+
+header{
+    background-image: url(../images/main_bg.jpg); 
+    background-repeat: repeat;
+    height: 1080px;
+} 
+header > .inner{
+    background-image: url(../images/main_banner.png);
+    background-repeat: no-repeat;
+    height: 1080px;
+}
+/**********header 끝*********************/
+section{
+    background-image: url(../images/bg.png);
+    background-repeat: repeat;
+}
+#sec1{
+    text-align: center;
+    padding-top: 120px;
+}
+#sec1 > #sec1_1 > h3{
+    font-size: 1.3rem; 
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+#sec1 > #sec1_1 > img {
+    background-color: #FFB304;
+    padding: 10px 40px 0px 40px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+} 
+#sec1 .white_bg{
+    background-color: #fff;
+    border-top:4px solid #FFB304; 
+    border-bottom:6px solid #FFB304;  
+    box-sizing: border-box;     
+    padding: 50px 0 ;
+
+}
+#sec1 .white_bg p{
+    font-size: 1.5rem;
+    color: #582601;
+}
+#sec1 .white_bg p > span{
+    font-weight: bold;
+}
+#sec1 div:nth-child(2) {margin-bottom: 20px;}
+#sec1_2, #sec1_3 {display: flex;}
+#sec1 #sec1_2 > p {font-size:1.7rem; margin-left: 60px;}
+#sec1 #sec1_3 > p {font-size:1.7rem; margin-left: 230px;}
+#sec1_3 img:last-child{height: 80px;}
+/**********section1 끝*********************/
+
+#sec2{padding-top: 120px;}
+#sec2 > .inner{
+    background-color: #FFF1D6;
+    border:10px solid#FFCF62;
+    padding-bottom: 30px;
+    position: relative;
+}
+#sec2 > .inner > h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 88px 20px 73px;
+    position:absolute; top:-50px; left: 370px;
+    background-image: url(../images/title1.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#sec2 > .inner ul{
+    width: 910px ;
+    margin:50px auto;
+    }
+#sec2 ul > li{
+    border:3px solid#ffb304;
+    background-color: #fff;
+    border-radius: 20px;
+    height: 270px;
+    box-sizing: border-box;
+    display: flex;
+    padding:7px;
+    margin-bottom: 20px;
+}
+#sec2 ul > li:nth-child(1) > div, #sec2 ul > li:nth-child(3) > div, #sec2 ul > li:nth-child(5) > div{
+    display: block;
+    margin-left: 30px;
+    margin-right: 20px;
+}
+#sec2 ul > li:nth-child(2) > div, #sec2 ul > li:nth-child(4) > div{
+    display: block; 
+    margin-right: 30px;
+    margin-left: 20px;
+}
+#sec2 ul > li > div > h3{font-size: 1.7rem; font-weight: 500;margin-top: 50px;}
+#sec2 ul > li > div > p{font-size:1.1rem;margin-top: 30px;}
+/**********section2 끝*********************/
+
+#sec3{padding-top: 120px;}
+#sec3 > .inner{
+    background-color: #FFF1D6;
+    border:10px solid#FFCF62;  
+    text-align: center;  
+    padding-bottom: 50px;
+    position: relative;
+}
+#sec3 > .inner > h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 64px 20px 54px;
+    position:absolute; top:-50px; left: 370px;
+    background-image: url(../images/title2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;    
+}
+#sec3 > .inner > p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 50px 0;
+}
+/****** 단계별 재료 탭세트 ***********/
+.tab_set{width: 800px; margin: 0 auto; }
+.tab_set ul li{    
+    display: inline-block;
+}
+.tab_set ul li a{
+    background-color: #FFCF62;
+    border: 2px solid #582601;
+    width: 120px;
+    height: 80px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 10px;
+    display: block;
+}
+.tab_set ul li .on{
+    background-color:#582601;
+    border: 2px solid #FFCF62;
+    color: #ca976f;
+}
+.tab_set ul li a:hover{
+    background-color:#582601;
+    border: 2px solid #FFCF62;
+    color: #ca976f;
+}
+.panels > div {
+    background-color: rgba(255, 207, 98, 0.6);
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: none;
+   
+ }
+/**********section3 끝*********************/
+
+#sec4{
+    padding-top: 120px;
+}
+#sec4 > .inner{
+    background-color: #FFF1D6;
+    border:10px solid#FFCF62;  
+    text-align: center;  
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    position: relative;
+}
+#sec4 > .inner > h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 70px 20px 59px;
+    position:absolute; top:-50px; left: 370px;
+    background-image: url(../images/title1.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+#sec4 > .inner > img{
+    width: 1080px;
+    position: absolute;
+    left: -10px;
+    top: -15px;    
+}
+#sec4 >.inner > h4{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 300; 
+    background-image: url(../images/sec4_img.jpg);
+    background-repeat: no-repeat;
+    height:300px ;
+    background-size: contain;
+    background-position: center;
+    padding-top: 120px;    
+}
+#sec4 h2{
+    background-image: url(../images/coupon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 140px;
+    position: absolute;
+    top:210px; left: 340px;
+}
+#sec4 p{
+    text-align: left;
+    font-size: 0.8rem; 
+    font-weight: 400;  
+    margin: 80px 0 70px 370px;      
+}
+#sec4 a{
+    display: block;
+    font-size: 1.3rem;
+    background-color: #FFB304;
+    border-radius: 40px;
+    width: 300px;
+    padding: 23px 0; 
+    margin: 0 auto;   
+}
+
+
+/**********section4 끝*********************/
+
+#sec5{padding-top: 120px;}
+#sec5 > .inner{
+    background-color: #FFF1D6;
+    border:10px solid#FFCF62;  
+    text-align: center;  
+    padding-bottom: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+#sec5 > .inner > h3{
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px 86px 20px 75px;
+    position:absolute; top:-50px; left: 370px;
+    background-image: url(../images/title2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;  
+}
+
+/********************** sec5_1 *******************************/
+#sec5 > .inner > .sec5_1 > h4{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height:  1.7;
+    padding: 50px 0 ;
+}
+
+#sec5 > .inner > .sec5_1 > div{
+    position: absolute;
+    top: 150px; left: 220px;
+}
+#sec5 > .inner > .sec5_1 > div > h5{
+    font-size: 1.1rem ;
+    font-weight: 500;
+    line-height: 1;    
+    height: 96px; 
+    position: absolute;
+    top:10px; left: 18px;    
+}
+#sec5 > .inner > .sec5_1 > div > h5 span{
+    font-size: 0.9rem;}
+
+/********************** sec5_2 *******************************/
+
+#sec5 .inner > .sec5-2{
+    background-image: url(../images/sec5_3.png);
+    background-repeat: no-repeat;
+    margin:50px 0 ;
+    padding: 10px 0px;
+}
+#sec5 .inner > .sec5-2 > h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+#sec5 .inner > .sec5-2 > h3{
+    font-size: 1rem;
+    font-weight: 400 ;
+    line-height: 1;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+#sec5 .inner > .sec5-2 > ul{
+    display: flex;  
+    width: 50%;  
+    margin:0 auto;    
+}
+#sec5 .inner > .sec5-2 > ul > li{
+    background-color: #FFE7E7;
+    width: 166px;
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 30px;     
+    text-align: center;
+    position: relative;
+} 
+#sec5 .inner > .sec5-2 > ul > li > h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #F88B8B;
+    border-radius: 10px;
+    width: 80px;
+    margin:0 auto;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    
+}
+#sec5 .inner > .sec5-2 > ul > li > h5{
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: #F8B7B7;    
+    width: 127px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+#sec5 .inner > .sec5-2 > ul > li:after{
+    content:url(../images/arrow.png);
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+#sec5 .inner > .sec5-2 > ul > li:last-child:after{
+    content:"";
+}
+#sec5 .inner > .sec5-2 > h6{
+    margin: 10px 0px 15px 0px;
+    font-size: 0.7rem;
+}
+#sec5 .inner > .sec5-2 > p{
+    text-align: left;
+    font-size: 0.7rem;
+    padding-left: 250px;
+    padding-bottom: 20px;
+}
+#sec5 > .inner > a {
+    font-size: 1.3rem;
+    background-color: #FFB304;
+    border-radius: 40px;
+    padding: 23px 30px;   
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+/**********section5 끝*********************/
+
+#sec6{padding: 120px 0 ;
+}
+#sec6 > .inner{
+    text-align: center;
+}
+#sec6 > .inner > h3{
+    padding-top: 70px;
+    background-image: url(../images/sec6.png);
+    background-repeat: no-repeat;
+    height: 650px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+#sec6 > .inner > a {
+    display: block;
+    font-size: 1.3rem;
+    background-color: #FFB304;
+    border-radius: 40px;
+    padding: 23px 0; 
+    width: 300px;
+    margin: 0 auto;
+}
+
+/**********section6 끝*********************/
+
+footer{
+    background-color: #FFD87E;
+    color: #582601;
+    height: 130px;
+    padding-top: 40px;
+}
+footer > .inner > p{
+    font-size: 0.8rem;
+    padding-left: 100px;
+} 

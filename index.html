@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>엘빈즈 랜딩페이지</title>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.tab_set').each(function(){
+
+                var anchor = $(this).find('.tabs a'); 
+                var anchor_on = $(this).find('.tabs .on'); 
+                var on_href = anchor_on.attr('href');  
+                var allpanel = $(this).find('.panels div'); 
+
+                $(on_href).show(); 
+
+                anchor.each(function(){  
+
+                    var href = $(this).attr('href');  
+                
+                    $(this).click(function(){  
+                         allpanel.hide();  
+                        anchor.removeClass('on');
+                        $(this).addClass('on'); 
+                        $(href).show(); 
+                    });
+
+                });
+
+            }); //tab_set 끝
+
+            $('.tab_set a').click(function(){
+                return false;
+            });
+
+        }); //제이쿼리 끝
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <header>
+            <!--메인배너bg 이미지 삽입-->
+            <div class="inner"></div><!--메인배너 내용 삽입--> 
+        </header>
+    
+        <!-----  섹션 전체에 격자무늬 bg ----->
+        <section id="sec1">
+            <div class="inner" id="sec1_1">
+                <h3>우리 아기 건강 밥상은 엘빈즈!</h3>
+                 <img src="images/why_alvins.png" alt="why_alvins">
+            </div><!--inner-->
+            <div class="white_bg">
+                <div class="inner" id="sec1_2">
+                    <img src="images/1.png" alt="no1">
+                    <p> 엘빈즈에서는 <span class="italic">‘엄마 자문 위원단’</span>과 함께<br>
+                        <span class="italic">건강한 재료, 맛과 영양</span>을 고루 갖춘 이유식을 만들었습니다.</p>
+                </div><!--inner-->
+            </div> <!--흰띠 배경-->
+            <div class="white_bg">
+                <div class="inner" id="sec1_3">
+                    <img src="images/2.png" alt="no2">
+                    <p> <span class="italic">‘2022 대한민국 고객만족 브랜드 대상’</span><br>
+                        이유식 부문 <span class="italic">8년 연속</span> 수상
+                    </p>
+                    <img src="images/mark.png" alt="브랜드 대상">
+                </div><!--inner-->
+            </div>  <!--흰띠 배경-->       
+        </section>
+    
+        <section id="sec2">
+            <div class="inner">
+                <h3>건강한 식재료</h3> <!--당근1 bg -->
+                    <ul>
+                        <li>
+                            <img src="images/sec2_1.png" alt="유기농 쌀">
+                            <div>
+                                <h3>친환경 유기농 쌀 + 하이아미쌀</h3>
+                                <p>친환경 유기농 쌀과 필수 아미노산이 일반 쌀보다 20% 이상 많이 들어있는 하이아미쌀을 함께 사용해요!</p>
+                            </div>
+                       </li>
+                        <li>
+                            <div>
+                                <h3>무항생제 소 / 닭 / 돼지</h3>
+                                <p>위생적인 사육환경에서 자라고, 성장촉진제, 호르몬제를 사용하지 않는 무항생제 국내산 소고기, 닭고기, 돼지고기만 사용해요!</p>
+                            </div>                            
+                            <img src="images/sec2_2.png" alt="무항생제 소/닭/돼지"> 
+                        </li>
+                        <li>
+                            <img src="images/sec2_3.png" alt="신안 김">
+                            <div>
+                                <h3>깨끗한 바다 신안 김</h3>
+                                <p>신안의 깨끗한 바다에서 채취하여 산 처리하지 않고 햇빛과 해풍에 자연 그대로 말린 건강한 무산 김을 사용해요 !</p>
+                            </div>                            
+                        </li>
+                        <li>
+                            <div>
+                                <h3>달콤한 공주밤</h3>
+                                <p>공주밤은 다른 지역의 밤보다 영양분과 무기질이 풍부하며 당도가 높고, 특유의 고소한 맛이 있어요.</p>
+                            </div>                            
+                            <img src="images/sec2_4.png" alt="공주밤"> 
+                        </li>
+                        <li>
+                            <img src="images/sec2_5.png" alt="건강한육수">
+                            <div>
+                                <h3>건강한 육수(야채/ 단호박 육수) </h3>
+                                <p>100% 국내산 청정 다시마, 무, 표고버섯, 양파, 대파, 당근으로 만든 엘빈즈만의 비법 야채육수, 단호박 육수를 사용해요</p>
+                            </div>                            
+                        </li>
+                    </ul>     
+            </div> <!--inner-->
+        </section>
+    
+        <section id="sec3">
+            <div class="inner">
+                <h3>단계별 맞춤 재료</h3><!--당근2 bg-->
+                <p>엘빈즈에서는 우리 아기에게 맞는 체계적인 식단을 제공해요!</p>
+                <div class="tab_set">
+                    <ul class="tabs">
+                        <li><a href="#panel1" class="on tab1">초기1<br>(4~5개월)</a></li>
+                        <li><a href="#panel2" class="tab2">초기2<br>(5~6개월)</a></li>
+                        <li><a href="#panel3">중기1<br>(6~7개월)</a></li>
+                        <li><a href="#panel4">중기2<br>(7~10개월)</a></li>
+                        <li><a href="#panel5">후기<br>(10~13개월)</a></li>
+                        <li><a href="#panel6">완료기<br>(13개월이상)</a></li>
+                    </ul>
+                    <div class="panels">
+                        <div id="panel1"><img src="images/step01.png" alt="초기1 재료"></div>
+                        <div id="panel2"><img src="images/step02.png" alt="초기2 재료"></div>
+                        <div id="panel3"><img src="images/step03.png" alt="중기1 재료"></div>
+                        <div id="panel4"><img src="images/step04.png" alt="중기2 재료"></div>
+                        <div id="panel5"><img src="images/step05.png" alt="후기 재료"></div>
+                        <div id="panel6"><img src="images/step05.png" alt="완료기 재료"></div>
+                    </div>                    
+                </div>
+                
+            </div><!--inner-->
+        </section>
+    
+        <section id="sec4">
+            <div class="inner">
+                <h3>이유식 주문하기</h3><!--당근1 bg-->
+                <h4>쿠폰 다운로드 받고 우리 아기 이유식 구매하세요! </h4>
+                <h2>10% 할인</h2> <!--쿠폰 bg--> 
+                <p>
+                    *ID당 1회만 사용 가능합니다.<br>
+                    *본 쿠폰은 다른 행사 제품과 중복 사용이 불가합니다.
+                </p>
+                <a href="#">쿠폰 다운로드 받기</a>
+            </div><!--inner-->
+        </section>
+    
+        <section id="sec5">
+            <div class="inner">
+                <h3>무료체험 신청</h3><!--당근2 bg-->   
+                <div class="sec5_1">                                     
+                    <h4>
+                        우리아기 영양듬뿍!<br> 
+                        엘빈즈의 ‘매일 영양듬뿍 배달'이유식을 체험해보세요!
+                    </h4>
+                    <img src="images/sec5_2.jpg" alt="alvins">
+                    <div>
+                        <img src="images/sec5_1.png">
+                        <h5>체험분 구성<br><span>엘빈즈 단계별<br> 이유식 7일분</span></h5>
+                    </div>
+                    
+                </div>
+                <div class="sec5-2"><!--핑크bg-->
+                    <h2>매일 영양듬뿍 배달 체험분 신청은 이렇게!</h2>
+                    <h3>
+                        정확한 배송을 위해 주소 확인 부탁드리며,<br>
+                        1~2주 이내에 집앞으로 신선하게 배달됩니다. 
+                    </h3>
+                    <ul>
+                        <li>
+                            <h4>step 01</h4>
+                            <h5>우리아기 이유식<br>주문하기</h5>
+                        </li><!--after로 화살표-->
+                        <li>
+                            <h4>step 02</h4>
+                            <h5>자동 응모<br>신청 완료</h5>
+                        </li><!--after로 화살표-->
+                        <li>
+                            <h4>step 03</h4>
+                            <h5>체험분 안전하게<br>집앞배달</h5>
+                        </li>
+                    </ul>
+                    <h6>[꼭 확인해 주세요!]</h6>
+                    <p>
+                        1. 매일 영양듬뿍 이유식 체험분은 엘빈즈 이유식(아기반찬) 2주 이상 신청시 자동 응모됩니다.<br>
+                        2. 엘빈즈 마이페이지 → 회원정보에 기재된 주소지로 체험분이 발송되오니, 신청 전에 다시 한 번 주소지 확인 부탁드립니다.<br>
+                        3. 신청 후에 배송지 주소 변경이 불가합니다.<br>
+                        4. 체험신청은 ID당 1회에 한하여 가능합니다.<br>
+                        5. 고객 과실(주소 오기입, 수령인 부재 등)로 인한 반송 시 재발송이 불가합니다.<br>
+                        6. 매일 영양듬뿍 이유식 무료체험은 10% 할인 쿠폰과 중복 적용 가능합니다.<br>
+                        7. 엘빈즈 이유식 10% 무료 쿠폰은 ID당 1회만 사용가능하며, 행사 조기 마감 시 사전 예고없이 쿠폰이 소멸될 수 있습니다. 
+                    </p>
+                </div>
+                <a href="#">매일 영양듬뿍 배달 신청</a>      
+            </div><!--inner--> 
+        </section>
+    
+        <section id="sec6">
+            <div class="inner">
+                <h3>엘빈즈의 우리 아기 과자도 추천해요!</h3><!--bg-->
+                <a href="#">우리아기 과자 구매하기</a>
+            </div><!--inner--> 
+        </section>
+    
+        <footer>
+            <div class="inner">
+                <p>
+                    주식회사 에이치에프앤비 │ 대표 : 최동재 │ 전화 : 1544-6962 │ 팩스 : 02-2071-3699 │ 주소: 서울시 강남구 영동대로511(트레이드타워)4601호<br>
+                    사업자등록번호: 662-86-01932 │통신판매신고: 제2021-서울강남-00296호 │<a href="#">[사업자정보확인]</a> │ ⓒ Alvins. All Rights Reserved
+                </p>
+            </div><!--inner--> 
+        </footer>
+    </div><!--wrap 끝-->
+
+</body>
+</html>
